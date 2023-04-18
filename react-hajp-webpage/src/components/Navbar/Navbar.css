@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Bakbak One', cursive;
 }
 
 :root {
-    --mainColor: #583659;
+    --mainColor: #4f2849;
     --mainColorLight: #a15ea3;
     --secondaryColor: #ff45e3;
     --textColor: white;
@@ -25,8 +27,7 @@ header {
 }
 
 img {
-    height: 40px;
-    width: 40px;
+    height: 80px;
 }
 
 nav a {

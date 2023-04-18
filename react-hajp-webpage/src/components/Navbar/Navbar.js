@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <header>
-      <img src='../images/HajpLogo.png' />
+      <img src={require('../images/HajpLogo.png')} />
       <nav ref={navRef}>
         <a href="#" data-replace="Početna"><span>Početna</span></a>
         <a href="#" data-replace="Booking i Upisi"><span>Booking i Upisi</span></a>
