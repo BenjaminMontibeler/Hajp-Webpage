@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import {FaBars, FaTimes} from "react-icons/fa";
+import {FaBars, FaTimes, FaInstagram} from "react-icons/fa";
 import {useRef} from "react";
 
 function Navbar() {
@@ -12,15 +12,15 @@ function Navbar() {
 
   return (
     <header>
-      <h3>Logo</h3>
+      <img src='../images/HajpLogo.png' />
       <nav ref={navRef}>
-        <a href="#">Početna</a>
-        <a href="#">Booking i Upisi</a>
-        <a href="#">Treneri i Članovi</a>
-        <a href="#">Zepelin</a>
-        <a href="#">Galerija</a>
-        <a href="#">Hajp Party</a>
-        <a href="#">O nama</a>
+        <a href="#" data-replace="Početna"><span>Početna</span></a>
+        <a href="#" data-replace="Booking i Upisi"><span>Booking i Upisi</span></a>
+        <a href="#" data-replace="Treneri i Članovi"><span>Treneri i Članovi</span></a>
+        <a href="#" data-replace="Zepelin"><span>Zepelin</span></a>
+        <a href="#" data-replace="Galerija"><span>Galerija</span></a>
+        <a href="#" data-replace="Hajp Party"><span>Hajp Party</span></a>
+        <a href="#" data-replace="O nama"><span>O nama</span></a>
         <button className='nav-btn nav-close-btn' onClick={showNavbar}>
           <FaTimes />
         </button>
