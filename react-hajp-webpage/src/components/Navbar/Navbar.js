@@ -22,6 +22,7 @@ function Navbar() {
         <CustomLink to="/Gallery" data-replace="Galerija"><span>Galerija</span></CustomLink>
         <CustomLink to="/Hajp" data-replace="Hajp Party"><span>Hajp Party</span></CustomLink>
         <CustomLink to="/About" data-replace="O nama"><span>O nama</span></CustomLink>
+        <a href='https://www.instagram.com/hajpos/' className='instagram-logo-a'><FaInstagram className='ig-logo'/></a>
         <button className='nav-btn nav-close-btn' onClick={showNavbar}>
           <FaTimes />
         </button>
