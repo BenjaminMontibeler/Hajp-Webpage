@@ -1,0 +1,64 @@
+.container{
+    /* background-image: url(D:\git\Hajp-Webpage\react-hajp-webpage\src\components\images\HajpParty-4.jpg); */
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.image-title{
+    height: 330px;
+}
+
+.party-title{
+    /* position: absolute; */
+    margin-top: 20px;
+    /* width: 100%; */
+    letter-spacing: 100px;
+    color: rgb(179, 52, 52);
+    font-size:5rem;
+    /* text-align: center; */
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 90px;
+    font-weight:900;
+    
+    
+}
+
+.contet-1{
+    margin-top: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-1{
+    height: 600px;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    overflow:hidden;
+    /* float:right !important; */
+    margin-left:-20% !important;
+}
+
+.description{
+    text-align: center;
+    height: 100%;
+}
+
+.image-2{
+    overflow:hidden;
+    height: 600px;
+    border-top-left-radius: 300px;
+    border-bottom-left-radius: 300px;
+    /* float:right !important; */
+    margin-right:-20% !important;
+}

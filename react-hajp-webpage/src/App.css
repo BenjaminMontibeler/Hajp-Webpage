@@ -1,0 +1,30 @@
+.main_container{
+    padding: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background:transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(126, 36, 36); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(179, 52, 52); 
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.title{
+    /* background-color: rgb(126, 36, 36); */
+    text-align: center;
+    /* border-radius: 20px; */
+}

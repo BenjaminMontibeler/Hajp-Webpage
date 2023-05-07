@@ -1,0 +1,55 @@
+.image {
+    width: 50%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.image-right{
+    margin-left: auto;
+}
+
+body {
+    /* background-image: url("D:\git\Hajp-Webpage\react-hajp-webpage\src\components\images\Web-background.png");
+    background-color: #cccccc; */
+    /* background-color: black; */
+    /* color: white; */
+}
+
+/* ::-webkit-scrollbar-thumb {
+    background: rgb(126, 36, 36); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(179, 52, 52); 
+} */
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-1{
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 50%;
+    height: 100%;
+    padding-left: 40px;
+}
+
+.text-2{
+    text-align: right;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 50%;
+    height: 100%;
+    padding-right: 40px;
+}
