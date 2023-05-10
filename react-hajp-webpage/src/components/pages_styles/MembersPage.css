@@ -1,0 +1,9 @@
+.top-div{
+    background-image: url(D:\git\Hajp-Webpage\react-hajp-webpage\src\components\images\treneri-1.jpg);
+    background-size: cover;
+    width: 103%;
+    height: 750px;
+    margin-left: -20px;
+    margin-top: -100px;
+    overflow:hidden;
+}

@@ -26,7 +26,7 @@ header {
     color: var(--textColor);
 }
 
-img {
+.img-nav {
     height: 80px;
 }
 
@@ -163,7 +163,7 @@ header .nav-btn {
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
-        background-color: var(--mainColor);
+        background-color: black;
         transition: 1s;
         transform: translateY(-100vh);
     }

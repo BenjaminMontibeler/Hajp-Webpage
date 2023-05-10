@@ -23,7 +23,7 @@ function Navbar() {
 
   return (
     <header>
-      <img src={require('../images/HajpLogo.png')} />
+      <img src={require('../images/HajpLogo.png')} className='img-nav' />
       <nav ref={navRef}>
         <Link to="/" data-replace="Početna"><span>Početna</span></Link>
         <CustomLink to="/Programs" data-replace="Programi i Upis"><span>Programi i Upis</span></CustomLink>
