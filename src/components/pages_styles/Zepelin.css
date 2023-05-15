@@ -1,0 +1,56 @@
+.zep-title{
+    letter-spacing: 11vw;
+    color: white;
+    font-weight: 800;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    /* padding-left: 150px;
+    padding-right: 150px; */
+    overflow: hidden;
+    background-image: url('D:\git\Hajp-Webpage-2\react-hajp-webpage-2\src\components\images\zep-pozadina.jpg');
+    background-size: cover;
+    background-position: center top;
+}
+
+.title-container{
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.zepelin-text-1{
+    color: white;
+    height: 100%;
+    padding-left: 50px;
+}
+
+.zepelin-text-2{
+    color: white;
+    height: 100%;
+    padding-right: 50px;
+}
+
+.zepelin-text-3{
+    color: white;
+    padding-top: 50px;
+    width: 70%;
+}
+
+.zepelin-container-1{
+    /* padding-left: 30px; */
+    padding-bottom: 150px;
+    margin-top: 150px;
+}
+
+.zepelin-container-2{
+    /* padding-right: 30px; */
+    padding-bottom: 150px;
+}
+
+.zepelin-container-3{
+    padding-bottom: 150px;
+}
+
+.image-zepelin{
+    width: 60%;
+}
