@@ -7,12 +7,13 @@ import { useEffect } from 'react'
 function Zepelin() {
 
   useEffect(() => {
-    AOS.init(
-      {duration:2000, 
-      once: true});
-    AOS.refresh();
+
+    window.addEventListener('load', function() { AOS.init(
+      {duration:2000,
+      once: true}); });
     
-  }, [])
+    AOS.refresh();
+  }, []);
 
   return (
 

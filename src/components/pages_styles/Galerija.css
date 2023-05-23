@@ -1,0 +1,14 @@
+.gallery-container{
+    background-color: black;
+}
+
+.img-column{
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.album-title{
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}

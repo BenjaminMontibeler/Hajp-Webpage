@@ -22,7 +22,14 @@
 }
 
 .party-content{
+    margin-bottom: 300px;
+    margin-top: 200px;
+    overflow: hidden;
+}
+
+.party-content-2{
     padding-bottom: 200px;
+    margin-top: 200px;
     overflow: hidden;
 }
 

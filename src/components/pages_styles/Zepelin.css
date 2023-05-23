@@ -38,17 +38,19 @@
 
 .zepelin-container-1{
     /* padding-left: 30px; */
-    padding-bottom: 150px;
-    margin-top: 150px;
+    margin-bottom: 250px;
+    margin-top: 250px;
 }
 
 .zepelin-container-2{
     /* padding-right: 30px; */
-    padding-bottom: 150px;
+    margin-bottom: 250px;
+    margin-top: 250px;
 }
 
 .zepelin-container-3{
-    padding-bottom: 150px;
+    margin-bottom: 250px;
+    margin-top: 250px;
 }
 
 .image-zepelin{
