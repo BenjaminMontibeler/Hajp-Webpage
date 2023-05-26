@@ -12,3 +12,57 @@
     padding-top: 30px;
     padding-bottom: 20px;
 }
+
+/*Modal css*/
+  
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    max-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+  
+  .modal-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  
+  .modal-content[data-aos='fade'] {
+    animation: modalFadeIn 0.3s;
+  }
+
+  .img-column img {
+    cursor: pointer;
+  }
+  
+  @keyframes modalFadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  
+  
