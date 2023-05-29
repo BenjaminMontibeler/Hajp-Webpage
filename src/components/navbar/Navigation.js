@@ -24,7 +24,7 @@ function Navigation() {
                     <CustomLink to="/Party" data-replace="Hajp Party"><span>Hajp Party</span></CustomLink>
                     <CustomLink to="/Booking" data-replace="Booking i Upiti"><span>Booking i Upiti</span></CustomLink>
                     <CustomLink to="/About" data-replace="O nama"><span>O nama</span></CustomLink>
-                    <CustomLink to="/Account"><FaUser/></CustomLink>
+                    <CustomLink to="/Profile"><FaUser/></CustomLink>
                 </Nav>
             </Navbar.Collapse>
 

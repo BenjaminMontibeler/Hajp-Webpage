@@ -11,6 +11,7 @@ import Party from './components/pages/Party';
 import About from './components/pages/About';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/footer/Footer';
+import Profile from './components/pages/Profile';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/Galerija' element={<Galerija />} />
           <Route path='/Party' element={<Party />} />
           <Route path='/About' element={<About />} />
+          <Route path='/Profile' element={<Profile />} />
         </Routes>
         <Footer />
     </div>

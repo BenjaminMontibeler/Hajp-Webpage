@@ -1,0 +1,169 @@
+.profile-container {
+    background-color: black;
+    color: white;
+    height: 700px;
+}
+
+.profile-container input{
+    border-radius: 0px;
+    border: 3px solid rgb(179, 52, 52);
+}
+
+.profile-container input:focus{
+    outline: none;
+}
+
+.login-input {
+    position: absolute;
+    width: 25%;
+    padding: 5px;
+    margin-top: 15px;
+    transform: translateY(-110%);
+    opacity: 0;
+    /* Hide the input forms initially */
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    /* Use ease-out for a quick drop effect */
+}
+
+.reg-input {
+    position: absolute;
+    width: 25%;
+    padding: 5px;
+    margin-top: 15px;
+    transform: translateY(-110%);
+    opacity: 0;
+    /* Hide the input forms initially */
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    /* Use ease-out for a quick drop effect */
+}
+
+.login-button {
+    position: absolute;
+    width: 25%;
+    padding: 5px;
+    margin-top: 15px;
+    opacity: 0;
+    /* Hide the submit buttons initially */
+    transform: translateY(110%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    /* Use ease-out for a quick drop effect */
+}
+
+.reg-button {
+    position: absolute;
+    width: 25%;
+    padding: 5px;
+    margin-top: 15px;
+    opacity: 0;
+    /* Hide the submit buttons initially */
+    transform: translateY(110%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    /* Use ease-out for a quick drop effect */
+}
+
+/* .button-width{
+    width: 25%;
+  } */
+
+/* .pass-input{
+    margin-top: 60px;
+  }
+
+  .button-width{
+    width: 400px;
+    margin-top: 90px;
+  }
+
+  .name-input{
+    margin-top: 60px;
+  }
+
+  .pass-input-2{
+    margin-top: 105px;
+  }
+
+  .button-width-2{
+    width: 400px;
+    margin-top: 135px;
+  } */
+
+.css-effect {
+    background-color: black;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.css-effect:hover {
+    background-color: rgb(113, 34, 34);
+}
+
+.css-effect:hover h1 {
+    transform: translate(0, -50%);
+}
+
+.css-effect:hover .input-animation:nth-child(1) {
+    transform: translateY(0);
+    /* Drop the first input form down */
+    opacity: 1;
+    /* Make the first input form visible */
+    transition-delay: 0.1s;
+    /* Add a delay for the drop effect */
+}
+
+.css-effect:hover .input-animation:nth-child(2) {
+    transform: translateY(120%);
+    /* Drop the second input form down */
+    opacity: 1;
+    /* Make the second input form visible */
+    transition-delay: 0.2s;
+    /* Add a delay for the drop effect */
+}
+
+.css-effect:hover .input-animation:nth-child(3) {
+    transform: translateY(240%);
+    /* Drop the third input form down */
+    opacity: 1;
+    /* Make the third input form visible */
+    transition-delay: 0.3s;
+    /* Add a delay for the drop effect */
+}
+
+.css-effect:hover .login-button {
+    transform: translateY(240%);
+    /* Drop the submit buttons down */
+    opacity: 1;
+    /* Make the submit buttons visible */
+    transition-delay: 0.4s;
+    /* Add a delay for the drop effect */
+}
+
+.form-wrapper {
+    transition: transform 0.3s ease-in-out;
+}
+
+.css-effect:hover .reg-animation:nth-child(1) {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+
+.css-effect:hover .reg-animation:nth-child(2) {
+    transform: translateY(120%);
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.css-effect:hover .reg-animation:nth-child(3) {
+    transform: translateY(240%);
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+
+.css-effect:hover .reg-button {
+    transform: translateY(360%);
+    /* Drop the submit buttons down */
+    opacity: 1;
+    /* Make the submit buttons visible */
+    transition-delay: 0.4s;
+    /* Add a delay for the drop effect */
+}

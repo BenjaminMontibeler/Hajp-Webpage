@@ -1,0 +1,61 @@
+.profile-container {
+  background-color: black;
+  color: white;
+  height: 700px;
+}
+
+.login-input {
+  padding: 5px;
+  margin-top: 15px;
+  transform: translateY(-100%);
+  opacity: 0; /* Hide the input forms initially */
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Use ease-out for a quick drop effect */
+}
+
+.login-button {
+  margin-top: 15px;
+  opacity: 0; /* Hide the submit buttons initially */
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Use ease-out for a quick drop effect */
+}
+
+.css-effect {
+  background-color: black;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.css-effect:hover {
+  background-color: rgb(113, 34, 34);
+}
+
+.css-effect:hover h1 {
+  transform: translate(0, -50%);
+}
+
+.css-effect:hover .input-animation:nth-child(1) {
+  transform: translateY(0); /* Drop the first input form down */
+  opacity: 1; /* Make the first input form visible */
+  transition-delay: 0.1s; /* Add a delay for the drop effect */
+}
+
+.css-effect:hover .input-animation:nth-child(2) {
+  transform: translateY(0); /* Drop the second input form down */
+  opacity: 1; /* Make the second input form visible */
+  transition-delay: 0.2s; /* Add a delay for the drop effect */
+}
+
+.css-effect:hover .input-animation:nth-child(3) {
+  transform: translateY(0); /* Drop the third input form down */
+  opacity: 1; /* Make the third input form visible */
+  transition-delay: 0.3s; /* Add a delay for the drop effect */
+}
+
+.css-effect:hover .login-button {
+  transform: translateY(0); /* Drop the submit buttons down */
+  opacity: 1; /* Make the submit buttons visible */
+  transition-delay: 0.4s; /* Add a delay for the drop effect */
+}
+
+.form-wrapper {
+  transition: transform 0.3s ease-in-out;
+}
