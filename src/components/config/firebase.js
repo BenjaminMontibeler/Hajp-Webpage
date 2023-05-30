@@ -11,7 +11,7 @@
 
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
-
+import 'firebase/compat/auth'
 import 'firebase/compat/storage';
 
 
@@ -39,5 +39,7 @@ const projectFirestore = firebase.firestore();
 
 const projectStorage = firebase.storage();
 
-export { projectFirestore, projectStorage };
+const projectAuth = firebase.auth();
+
+export { projectFirestore, projectStorage, projectAuth };
 // const storage = getStorage(app);

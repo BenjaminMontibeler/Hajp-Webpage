@@ -2,6 +2,23 @@
   text-align: center;
 }
 
+.navbar .navbar-collapse:not(.show) .logged-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10%;
+}
+
+.navbar .navbar-collapse.show .logged-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 .navbar-collapse a{
     padding-top: 15px;
     padding-bottom: 15px;

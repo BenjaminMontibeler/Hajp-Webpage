@@ -4,13 +4,24 @@
     height: 700px;
 }
 
-.profile-container input{
-    border-radius: 0px;
-    border: 3px solid rgb(179, 52, 52);
+.profile-container input {
+    /* border-radius: 0px;
+    border: 3px solid rgb(179, 52, 52); */
 }
 
-.profile-container input:focus{
+.profile-container input:focus {
     outline: none;
+    border: 0px;
+}
+
+.profile-container input {
+    outline: none;
+    border-radius: 20px;
+    border: 0px;
+}
+
+::placeholder {
+    text-align: center;
 }
 
 .login-input {
@@ -43,10 +54,17 @@
     padding: 5px;
     margin-top: 15px;
     opacity: 0;
+    outline: none;
+    border: 0px;
+    border-radius: 20px;
     /* Hide the submit buttons initially */
     transform: translateY(110%);
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
     /* Use ease-out for a quick drop effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .reg-button {
@@ -55,10 +73,29 @@
     padding: 5px;
     margin-top: 15px;
     opacity: 0;
+    outline: none;
+    border: 0px;
+    border-radius: 20px;
     /* Hide the submit buttons initially */
     transform: translateY(110%);
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
     /* Use ease-out for a quick drop effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.reg-button:hover,
+.login-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.reg-button:active,
+.login-button:active {
+    background-color: rgb(47, 114, 70);
+    color: black;
 }
 
 /* .button-width{
@@ -166,4 +203,12 @@
     /* Make the submit buttons visible */
     transition-delay: 0.4s;
     /* Add a delay for the drop effect */
+}
+
+.error-register{
+    position: absolute;
+    margin-top: 200px;
+    padding-right: 6.5%;
+    width: 30%;
+    /* text-align: center; */
 }
