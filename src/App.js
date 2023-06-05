@@ -47,7 +47,7 @@ export class App extends Component {
         <Navigation user={this.state.user} />
         <Routes>
           <Route path="/" element={<Pocetna />} />
-          <Route path="/Programi" element={<Programi />} />
+          <Route path="/Programi" element={<Programi user={this.state.user} />} />
           <Route path="/Booking" element={<Booking />} />
           <Route path="/Treneri" element={<Treneri />} />
           <Route path="/Zepelin" element={<Zepelin />} />

@@ -15,3 +15,7 @@
 ::-webkit-scrollbar-thumb {
     background: rgb(113, 34, 34); 
 }
+
+.App{
+    background-color: black;
+}

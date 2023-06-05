@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { projectStorage } from '../config/firebase.js';
 import AOS from 'aos';
 import '../pages_styles/About.css'
 
@@ -33,7 +32,7 @@ function About() {
         <div className='info-text2' data-aos="fade-down" data-aos-offset="200" data-aos-once="true">
           <h2>Plesni Stilovi</h2>
           <p>Iako se hajp pretežito bavi urbanim plesnim stilovima poput Hip-hopa, Voguea, MTV-a i Break Dancea, imamo dvije grupe koje se bave
-            iskključivo suvremenim tj. Jazz danceom i Latino plesovima.</p>
+            isključivo suvremenim tj. Jazz danceom i Latino plesovima.</p>
         </div>
       </div>
 

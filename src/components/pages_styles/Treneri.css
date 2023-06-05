@@ -1,0 +1,14 @@
+.trainers-container{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.coach-info{
+    border-top: 1px solid rgb(113, 34, 34);
+    padding: 20px;
+}
+
+.coach-info.first{
+    margin-top: 80px;
+}

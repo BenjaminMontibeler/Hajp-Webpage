@@ -1,14 +1,3 @@
-// import { initializeApp } from 'firebase/app';
-// import { getStorage } from "firebase/storage";
-// import { getFirestore } from "firebase/firestore";
-
-// import firebase from 'firebase/compat/app';
-// import 'firebase/compat/auth';
-// import 'firebase/compat/firestore';
-
-// import * as firebase from 'firebase/app';
-// import 'firebase/firestore';
-
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth'
@@ -26,14 +15,8 @@ const firebaseConfig = {
     storageBucket: 'hajp-website.appspot.com'
   };
   
-// const app = initializeApp(firebaseConfig);
 
 firebase.initializeApp(firebaseConfig);
-
-// const db = getFirestore(app);
-
-// const db = firebase.firestore();
-// const auth = firebase.auth();
 
 const projectFirestore = firebase.firestore();
 
@@ -42,4 +25,3 @@ const projectStorage = firebase.storage();
 const projectAuth = firebase.auth();
 
 export { projectFirestore, projectStorage, projectAuth };
-// const storage = getStorage(app);
