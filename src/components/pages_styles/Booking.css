@@ -1,0 +1,56 @@
+.booking-container{
+    background-color: black;
+    color: white;
+    height: 700px;
+    background-image: url(D:\git\Hajp-Webpage-2\react-hajp-webpage-2\src\components\images\booking-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.booking-container p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.booking-text{
+    /* background-color: rgb(113, 34, 34); */
+}
+
+.booking-title{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.booking-container input, textarea, button{
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.booking-container textarea{
+    height: 100px;
+    resize: none;
+}
+
+.booking-container form{
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.booking-container input:focus, textarea:focus{
+    border: 2px rgb(179, 52, 52) solid;
+}
+
+.booking-container button:hover{
+    background-color: rgb(179, 52, 52);
+}
+
+.booking-container button:active{
+    background-color: rgb(113, 34, 34);
+    color: white;
+}

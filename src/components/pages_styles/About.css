@@ -1,0 +1,47 @@
+.about-container{
+    background-color: black;
+    color: white;
+    height: 110%;
+}
+
+.info-container{
+    background-image: url(D:\git\Hajp-Webpage-2\react-hajp-webpage-2\src\components\images\about-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+
+.info-text{
+    padding: 50px;
+    padding-top: 120px;
+    width: 50%;
+}
+
+.info-text p{
+    width: 90%;
+    padding-top: 50px;
+}
+
+.info-container2{
+    background-image: url(D:\git\Hajp-Webpage-2\react-hajp-webpage-2\src\components\images\about-back2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    /* margin-bottom: 30px; */
+}
+
+.info-text2{
+    text-align: center;
+    width: 30%;
+    margin-top: 280px;
+}
+
+.info-padding{
+    padding: 50px;
+}
+
+.location-info{
+    padding-left: 100px;
+}
