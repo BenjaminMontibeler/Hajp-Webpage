@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../pages_styles/Profile.css';
+import '../pages_styles/Login.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { projectAuth, projectFirestore } from '../config/firebase';
@@ -55,7 +55,7 @@ function Login(props) {
     }
 
     return (
-        <div className='profile-container'>
+        <div className='login-container'>
             <div className='row container-fluid justify-content-center justify-content-evenly h-100'>
                 <div className='col-3 text-center css-effect h-100 w-50 d-flex flex-column justify-content-center'>
                     <h1 data-aos="fade-left" data-aos-offset="200" data-aos-once="true">LOG IN</h1>

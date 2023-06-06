@@ -55,7 +55,7 @@ export class App extends Component {
           <Route path="/Party" element={<Party />} />
           <Route path="/About" element={<About />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/Profile" element={<Profile />} />
+          <Route path="/Profile" element={<Profile user={this.state.user} />} />
         </Routes>
         <Footer />
       </div>

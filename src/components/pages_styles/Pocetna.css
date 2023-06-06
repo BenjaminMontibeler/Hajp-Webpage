@@ -1,0 +1,10 @@
+.main-page-container{
+    color: white;
+}
+
+.container-1{
+    background-image: url(D:\git\Hajp-Webpage-2\react-hajp-webpage-2\src\components\images\main-page1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 1000px;
+}
