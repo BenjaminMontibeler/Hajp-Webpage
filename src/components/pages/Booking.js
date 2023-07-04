@@ -5,9 +5,15 @@ import AOS from 'aos';
 function Booking() {
 
   useEffect(() => {
+    // Scroll to the top of the page on reload or refresh
+    window.scrollTo(0, 0);
+  }, []);
+
+
+  useEffect(() => {
     const initAOS = setTimeout(() => {
       AOS.init({
-        duration: 1000
+        duration: 2000
       });
     }, 1000); // Delay of 1000 milliseconds (adjust as needed)
 

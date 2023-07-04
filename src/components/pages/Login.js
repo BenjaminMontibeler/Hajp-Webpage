@@ -8,6 +8,12 @@ import { useNavigate } from 'react-router-dom';
 function Login(props) {
 
     useEffect(() => {
+        // Scroll to the top of the page on reload or refresh
+        window.scrollTo(0, 0);
+      }, []);
+    
+
+    useEffect(() => {
         const initAOS = setTimeout(() => {
             AOS.init({
                 duration: 2000

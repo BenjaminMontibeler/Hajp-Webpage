@@ -46,3 +46,54 @@
 .location-info{
     padding-left: 100px;
 }
+
+.about-container a {
+    color: white;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.about-container a:hover{
+    color: white;
+}
+
+.about-container a::before,
+.about-container a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.about-container a::before {
+    background-color: white;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.about-container a::after {
+    content: attr(data-replace);
+    height: 100%;
+    /* top: 0; */
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: white;
+}
+
+.about-container a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+
+.about-container a:hover::after {
+    transform: translate3d(0, 0, 0);
+}
+
+.location-info ul li{
+    padding-top: 20px;
+}

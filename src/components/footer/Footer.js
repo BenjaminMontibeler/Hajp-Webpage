@@ -8,40 +8,37 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md={4}>
-            <h4>About Us</h4>
+            <h4>O nama</h4>
             <p>
-              We are a dance studio that offers a variety of dance styles for
-              all ages and levels. Our mission is to provide quality dance
-              education and create a positive and fun learning environment for
-              our students.
+            Hajp je novonastali plesni studio osnovan prije od 3 godine od strane dvoje mladih plesača, trenera i studenata Josipa Bišćana i Karle Mitrović.
+            Josip i Karla bave se plesom više od 10 godina, dotakli su se mnogih plesnih stilova, sudjelovali u brojnim nastupima, natjecanjima,
+            koreografirali spotove te osnivali plesne evente. Hajp je sam po sebi počeo kao plesni event u lokalnom studentskom kafiću gdje su Karla i Josipa
+            osjetili zainteresiranost mladih studenata za plesom.
             </p>
           </Col>
-          <Col md={4}>
-            <h4>Contact Us</h4>
+          <Col md={4} className="text-center footer-kontakt">
+            <h4>Kontakt</h4>
             <p>
-              Phone: (123) 456-7890
+              Telefon: 095 698 6689
               <br />
-              Email: info@dancestudio.com
               <br />
-              Address: 123 Main St, Anytown USA
+              Email: hajp@gmail.com
+              <br />
+              <br />
+              Adresa: Ivana Gundulića 5, Osijek
             </p>
           </Col>
-          <Col md={4}>
-            <h4>Follow Us</h4>
+          <Col md={4} className="text-end">
+            <h4>Pratite nas</h4>
             <ul className="list-unstyled">
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/profile.php?id=100086255118054">
                   <i className="fab fa-facebook fa-lg"></i> Facebook
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.instagram.com/hajpos/">
                   <i className="fab fa-instagram fa-lg"></i> Instagram
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fab fa-twitter fa-lg"></i> Twitter
                 </a>
               </li>
             </ul>
@@ -50,7 +47,7 @@ const Footer = () => {
         <hr />
         <div className="text-center">
           <p>
-            &copy; {new Date().getFullYear()} Dance Studio. All rights reserved.
+            &copy; {new Date().getFullYear()} Hajp Plesni studio. All rights reserved.
           </p>
         </div>
       </Container>

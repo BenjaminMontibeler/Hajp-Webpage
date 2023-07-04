@@ -1,14 +1,18 @@
-.party-container{
+.party-container {
     background-color: black;
 }
 
-.image-title{
+.party-container h3 {
+    color: white;
+}
+
+.image-title {
     width: 33%;
     padding-top: 10vw;
     padding-bottom: 170px;
 }
 
-.party-title{
+.party-title {
     letter-spacing: 6.5vw;
     width: 100%;
     color: rgb(179, 52, 52);
@@ -16,25 +20,25 @@
     font-weight: 800;
     margin-top: -25vw;
     padding-left: 7vw;
-    font-size:5.2vw;
+    font-size: 5.2vw;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.party-content{
+.party-content {
     margin-bottom: 300px;
     margin-top: 200px;
     overflow: hidden;
 }
 
-.party-content-2{
+.party-content-2 {
     padding-bottom: 200px;
     margin-top: 200px;
     overflow: hidden;
 }
 
 
-.image-1{
+.image-1 {
     border-top-right-radius: 400px;
     border-bottom-right-radius: 400px;
     overflow: hidden;
@@ -43,13 +47,13 @@
     width: 50%;
 }
 
-.description-1{
+.description-1 {
     color: white;
     /* padding-left: 200px; */
     width: 40%;
 }
 
-.image-2{
+.image-2 {
     border-top-left-radius: 400px;
     border-bottom-left-radius: 400px;
     /* margin-right: -300px; */
@@ -57,25 +61,68 @@
     width: 50%;
 }
 
-.description-2{
+.description-2 {
     color: white;
     /* padding-right: 200px; */
     width: 40%;
     margin-left: 30px;
 }
 
-.image-3{
+.image-3 {
     border-top-left-radius: 400px;
     border-bottom-left-radius: 400px;
 }
 
-.image-5{
+.image-5 {
     border-top-right-radius: 400px;
     border-bottom-right-radius: 400px;
 }
 
-.description-3{
+.description-3 {
     color: white;
     width: 70%;
     padding-top: 100px;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 180px;
+    color: white;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.countdown-value {
+    font-size: 48px;
+}
+
+.countdown-label {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Additional styles for minutes and seconds */
+.countdown-container .countdown-item:nth-child(3),
+.countdown-container .countdown-item:nth-child(4) {
+    display: flex;
+}
+
+@media (max-width: 480px) {
+    .countdown-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .countdown-item {
+        margin: 10px;
+    }
 }

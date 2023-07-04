@@ -8,6 +8,12 @@ function Galerija() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
+    // Scroll to the top of the page on reload or refresh
+    window.scrollTo(0, 0);
+  }, []);
+
+
+  useEffect(() => {
     const initAOS = setTimeout(() => {
       AOS.init({
         duration: 1500

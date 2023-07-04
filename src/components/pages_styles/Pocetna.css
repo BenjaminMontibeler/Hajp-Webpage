@@ -1,10 +1,194 @@
-.main-page-container{
+.main-page-container {
+    color: white;
+    overflow: hidden;
+}
+
+.container-1 {
+    background-image: url(D:\git\Hajp-Webpage-2\react-hajp-webpage-2\src\components\images\main-page1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+.container-2 {
+    overflow: hidden;
+}
+
+.main-hajp {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    background-image: url(D:\git\Hajp-Webpage-2\react-hajp-webpage-2\src\components\images\Studio_Project_V2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-hajp .party-title-main {
     color: white;
 }
 
-.container-1{
-    background-image: url(D:\git\Hajp-Webpage-2\react-hajp-webpage-2\src\components\images\main-page1.jpg);
+
+.main-hajp:hover .party-title-main {
+    color: rgb(179, 52, 52);
+}
+
+.image-title-main {
+    width: 33%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.main-title {
+    padding-top: 150px;
+}
+
+.main-title button {
+    margin-top: 20px;
+    border-radius: 0;
+    background-color: rgb(179, 52, 52);
+    color: white;
+}
+
+.main-title button:hover {
+    background-color: rgb(113, 33, 33);
+    color: white;
+}
+
+.main-title button:active {
+    background-color: rgb(74, 22, 22);
+    color: white;
+}
+
+.main-title .padding-div {
+    margin-right: 60px;
+}
+
+.main-page-container a {
+    color: white;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.main-page-container a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.main-page-container a::before,
+.main-page-container a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.main-page-container a::before {
+    background-color: white;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.main-page-container a::after {
+    content: attr(data-replace);
+    height: 100%;
+    /* top: 0; */
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: white;
+}
+
+.main-page-container a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+
+.main-page-container a:hover::after {
+    transform: translate3d(0, 0, 0);
+}
+
+.image-1 {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/hajp-website.appspot.com/o/Plesni%20Stilovi%2Fvogue.jpg?alt=media&token=b6f7a402-6b0d-4fec-861d-d386dfffa338&_gl=1*df7pp8*_ga*MjExMTg4ODkyMi4xNjgwMjAwNjEy*_ga_CW55HF8NVT*MTY4NjE0MTM4OC4zMC4xLjE2ODYxNDE0MDQuMC4wLjA.);
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    height: 1000px;
+    background-size: cover;
+}
+
+.image-2 {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/hajp-website.appspot.com/o/Plesni%20Stilovi%2Fhiphop.jpg?alt=media&token=e470bb61-3115-4b0d-ab8d-a0994ce090cb&_gl=1*16l0w00*_ga*MjExMTg4ODkyMi4xNjgwMjAwNjEy*_ga_CW55HF8NVT*MTY4NjE0MTM4OC4zMC4xLjE2ODYxNDEzOTcuMC4wLjA.);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-3 {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/hajp-website.appspot.com/o/Plesni%20Stilovi%2Fbreakdance.jpg?alt=media&token=d8622807-8aca-42ac-aef0-5d719a7282be&_gl=1*1p405ny*_ga*MjExMTg4ODkyMi4xNjgwMjAwNjEy*_ga_CW55HF8NVT*MTY4NjE0MTM4OC4zMC4wLjE2ODYxNDEzODguMC4wLjA.);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.party-title-main {
+    letter-spacing: 15vw;
+    width: 100%;
+    color: rgb(179, 52, 52);
+    font-size: 5.2vw;
+    font-weight: 800;
+    padding-left: 10vw;
+}
+
+.countdown-container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 50px;
+    color: white;
+}
+
+.countdown-item-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.countdown-value-main {
+    font-size: 48px;
+}
+
+.countdown-label-main {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Additional styles for minutes and seconds */
+.countdown-container-main .countdown-item-main:nth-child(3),
+.countdown-container-main .countdown-item-main:nth-child(4) {
+    display: flex;
+}
+
+@media (max-width: 480px) {
+    .countdown-container-main {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .countdown-item-main {
+        margin: 10px;
+    }
+}
+
+.main-content-1{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.booking-main{
+    margin-top: 300px;
+    margin-bottom: 300px;
 }

@@ -73,7 +73,7 @@ return (
         {user &&
           <div className='logged-div'>
             <CustomLink to="/Profile"><FaUser /></CustomLink>
-            <a className='logout-btn' onClick={logout} data-replace="Log in"><span>Log out</span></a>
+            <a className='logout-btn' onClick={logout} data-replace="Log out"><span>Log out</span></a>
           </div>
         }
       </Nav>

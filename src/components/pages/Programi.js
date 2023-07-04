@@ -41,6 +41,12 @@ const Programi = () => {
     return () => clearTimeout(initAOS);
   }, []);
 
+  useEffect(() => {
+    // Scroll to the top of the page on reload or refresh
+    window.scrollTo(0, 0);
+  }, []);
+
+
   // const handleLoginRedirect = () => {
   //   navigate('/Login');
   // };
