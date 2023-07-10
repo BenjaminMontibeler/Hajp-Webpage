@@ -33,8 +33,8 @@ const Profile = () => {
 
   const getUserData = async () => {
     try {
-      const userRef = projectFirestore.collection('Users').doc(user.uid);
-      const userSnapshot = await userRef.get();
+      // const userRef = projectFirestore.collection('Users').doc(user.uid);
+      const userSnapshot = await projectFirestore.collection('Users').doc(user.uid).get();
       const userData = userSnapshot.data();
       setName(userData.Name);
 
@@ -54,7 +54,18 @@ const Profile = () => {
         const validDanceDocs = danceDocs.filter((doc) => doc !== null);
         console.log("validDanceDocs:", validDanceDocs); // Log valid dance documents
 
-        setDances(validDanceDocs);
+        const sortedDances = validDanceDocs.map((dance) => {
+          const sortedTermin = Object.entries(dance.Termin).sort((a, b) => {
+            const daysOrder = ['Pon', 'Uto', 'Sri', 'Čet', 'Pet', 'Sub'];
+            const dayA = a[0]
+            const dayB = b[0]
+            return daysOrder.indexOf(dayA) - daysOrder.indexOf(dayB);
+          });
+
+          return { ...dance, Termin: Object.fromEntries(sortedTermin) };
+        });
+
+        setDances(sortedDances);
       } else {
         setDances([]);
       }
@@ -65,7 +76,7 @@ const Profile = () => {
 
   const removeDance = async (danceId) => {
     const userRef = projectFirestore.collection('Users').doc(user.uid);
-    const userSnapshot = await userRef.get();
+    const userSnapshot = await projectFirestore.collection('Users').doc(user.uid).get();
     const userData = userSnapshot.data();
     const updatedDances = userData.dances.filter(
       (danceRef) => danceRef.id !== danceId
@@ -79,20 +90,22 @@ const Profile = () => {
     const unsubscribe = projectAuth.onAuthStateChanged((user) => {
       if (user) {
         setUser(user);
+        getUserData();
+        setRemovalStatus(false);
       } else {
         setUser(null);
       }
     });
 
     return () => unsubscribe();
-  }, []);
-
-  useEffect(() => {
-    if (user) {
-      getUserData();
-      setRemovalStatus(false);
-    }
   }, [user, removalStatus]);
+
+  // useEffect(() => {
+  //   if (user) {
+  //     getUserData();
+  //     setRemovalStatus(false);
+  //   }
+  // }, [user, removalStatus]);
 
   if (!user) {
     return (

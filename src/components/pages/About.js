@@ -26,19 +26,19 @@ function About() {
       <div className='info-container container-fluid'>
         <div className='info-text' data-aos="fade-right" data-aos-offset="200" data-aos-once="true">
           <h2>Kako je nastao Plesni Studio Hajp?</h2>
-          <p>Hajp je novonastali plesni studio osnovan prije od 3 godine od strane dvoje mladih plesača, trenera i studenata Josipa Bišćana i Karle Mitrović.
-            Josip i Karla bave se plesom više od 10 godina, dotakli su se mnogih plesnih stilova, sudjelovali u brojnim nastupima, natjecanjima,
-            koreografirali spotove te osnivali plesne evente. Hajp je sam po sebi počeo kao plesni event u lokalnom studentskom kafiću gdje su Karla i Josipa
-            osjetili zainteresiranost mladih studenata za plesom.
-            Danas se u plesnom studiju realiziraju i programi obrazovanja koje je verificiralo Ministarstvo znanosti, obrazovanja i sporta.</p>
+          <p>Hajp je novonastali plesni studio osnovan prije od 3 godine od strane dvoje mladih plesača, trenera i studenata Josipa Bišćana 
+            i Karle Mitrović. Josip i Karla bave se plesom više od 10 godina, dotakli su se mnogih plesnih stilova, sudjelovali u brojnim
+            nastupima, natjecanjima, koreografirali spotove te osnivali plesne evente. Hajp je sam po sebi počeo kao plesni event u 
+            lokalnom studentskom kafiću gdje su Karla i Josipa osjetili zainteresiranost mladih studenata za plesom. Danas se u plesnom studiju 
+            realiziraju i programi obrazovanja koje je verificiralo Ministarstvo znanosti, obrazovanja i sporta.</p>
         </div>
       </div>
 
       <div className='info-container2 d-flex justify-content-center'>
         <div className='info-text2' data-aos="fade-down" data-aos-offset="200" data-aos-once="true">
           <h2>Plesni Stilovi</h2>
-          <p>Iako se hajp pretežito bavi urbanim plesnim stilovima poput Hip-hopa, Voguea, MTV-a i Break Dancea, imamo dvije grupe koje se bave
-            isključivo suvremenim tj. Jazz danceom i Latino plesovima.</p>
+          <p>Iako se hajp pretežito bavi urbanim plesnim stilovima poput Hip-hopa, Voguea, MTV-a i Break Dancea, 
+            imamo dvije grupe koje se bave isključivo suvremenim tj. Jazz danceom i Latino plesovima.</p>
         </div>
       </div>
 

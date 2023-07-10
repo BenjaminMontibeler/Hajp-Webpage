@@ -63,7 +63,10 @@ function Treneri() {
           <img src={require('../images/Benjamin.jpeg')} className='img-fluid' data-aos="fade-left" data-aos-offset="200" data-aos-once="true"></img>
         </div>
         <div className='col-8 d-flex my-auto justify-content-center' data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
-          hjabnfdjhaebnja
+          Benjamin Montibeler rođen je u Vinkovcima 26. lipnja 1999. Od osnovnoškolskih dana bavi se glumom i plesom te nastupa na raznim
+          natjecanjima kao što je LiDraNo. 2021. počinje se baviti hip-hop-om u plesnom studiju Shine i ubrzvo dobiva posao plesnog
+          asistenta. S urbanom grupom Zepelin nastupao je na brojnim natjecanjima, kako u skolu plesnog studija Shine, tako i u sklopu plesnog
+          studija Hajp.
         </div>
       </div>
 
@@ -92,7 +95,9 @@ function Treneri() {
 
       <div className='row coach-info' data-aos="fade-right" data-aos-offset="200" data-aos-once="true">
         <div className='col-8 d-flex my-auto justify-content-center' data-aos="fade-right" data-aos-offset="200" data-aos-once="true">
-          efjkdsnfkjenf
+        Bavim se plesom od 5. razreda osnovne škole. Počela sam sa suvremenim plesom te nakon par godina pauze, započela sam sa folklorom u 
+        Folklornom ansamblu Koprivnica. Naime, prilikom upisa na faks u Osijeku upisala sam se u plesni studio Shine i sada tamo savladavam 
+        hip-hop te povremeno radim kao asistent u vođenju treninga.
         </div>
         <div className='col-4'>
         <img src={require('../images/Lana.jpg')} className='img-fluid' data-aos="fade-right" data-aos-offset="200" data-aos-once="true"></img>

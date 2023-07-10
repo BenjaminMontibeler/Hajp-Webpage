@@ -17,37 +17,37 @@ import Profile from './components/pages/Profile';
 import { projectAuth, projectFirestore } from './components/config/firebase';
 
 export class App extends Component {
-  state = {
-    user: null
-  }
+  // state = {
+  //   user: null
+  // }
 
-  componentDidMount() {
-    projectAuth.onAuthStateChanged(user => {
-      if (user) {
-        projectFirestore.collection('Users').doc(user.uid).get().then(snapshot => {
-          this.setState({
-            user: snapshot.data().name
-          }, () => {
-            this.forceUpdate();
-          });
-        });
-      } else {
-        this.setState({
-          user: null
-        }, () => {
-          this.forceUpdate();
-        });
-      }
-    });
-  }
+  // componentDidMount() {
+  //   projectAuth.onAuthStateChanged(user => {
+  //     if (user) {
+  //       projectFirestore.collection('Users').doc(user.uid).get().then(snapshot => {
+  //         this.setState({
+  //           user: snapshot.data()
+  //         }, () => {
+  //           this.forceUpdate();
+  //         });
+  //       });
+  //     } else {
+  //       this.setState({
+  //         user: null
+  //       }, () => {
+  //         this.forceUpdate();
+  //       });
+  //     }
+  //   });
+  // }
 
   render() {
     return (
       <div className="App">
-        <Navigation user={this.state.user} />
+        <Navigation />
         <Routes>
           <Route path="/" element={<Pocetna />} />
-          <Route path="/Programi" element={<Programi user={this.state.user} />} />
+          <Route path="/Programi" element={<Programi  />} />
           <Route path="/Booking" element={<Booking />} />
           <Route path="/Treneri" element={<Treneri />} />
           <Route path="/Zepelin" element={<Zepelin />} />
@@ -55,7 +55,7 @@ export class App extends Component {
           <Route path="/Party" element={<Party />} />
           <Route path="/About" element={<About />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/Profile" element={<Profile user={this.state.user} />} />
+          <Route path="/Profile" element={<Profile  />} />
         </Routes>
         <Footer />
       </div>

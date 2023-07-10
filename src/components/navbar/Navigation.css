@@ -17,8 +17,6 @@
     height: 100%;
 }
 
-
-
 .navbar-collapse a{
     padding-top: 15px;
     padding-bottom: 15px;
@@ -29,6 +27,11 @@
     position: relative;
     overflow: hidden;
 }
+
+/* .active {
+    color: rgb(240, 107, 107); 
+} */
+
 
 .navbar a:hover{
     color: white;

@@ -11,7 +11,7 @@ function Pocetna() {
   const link3 = "https://firebasestorage.googleapis.com/v0/b/hajp-website.appspot.com/o/Plesni%20Stilovi%2Fbreakdance.jpg?alt=media&token=d8622807-8aca-42ac-aef0-5d719a7282be&_gl=1*17bg011*_ga*MjExMTg4ODkyMi4xNjgwMjAwNjEy*_ga_CW55HF8NVT*MTY4NjE0MTM4OC4zMC4xLjE2ODYxNDI0MDguMC4wLjA.";
 
   const handleLoginRedirect = () => {
-    navigate('/Login');
+    navigate('/Programi');
   };
 
   const handleLoginRedirect2 = () => {
@@ -35,7 +35,7 @@ function Pocetna() {
       AOS.init({
         duration: 2000
       });
-    }, 1000); // Delay of 1000 milliseconds (adjust as needed)
+    }, 1000);
 
     return () => clearTimeout(initAOS);
   }, []);
@@ -48,7 +48,7 @@ function Pocetna() {
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const countdownDate = new Date('2023-06-26'); // Replace with your desired date
+    const countdownDate = new Date('2023-07-26'); // Replace with your desired date
     const interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = countdownDate - now;

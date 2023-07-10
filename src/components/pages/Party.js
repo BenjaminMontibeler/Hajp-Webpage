@@ -24,7 +24,7 @@ function Party() {
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const countdownDate = new Date('2023-06-26'); // Replace with your desired date
+    const countdownDate = new Date('2023-07-26'); // Replace with your desired date
     const interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = countdownDate - now;

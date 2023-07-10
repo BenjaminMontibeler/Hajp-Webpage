@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import { projectAuth, projectFirestore } from '../config/firebase';
 import { useNavigate } from 'react-router-dom';
 
-function Login(props) {
+function Login() {
 
     useEffect(() => {
         // Scroll to the top of the page on reload or refresh
@@ -23,7 +23,7 @@ function Login(props) {
         return () => clearTimeout(initAOS);
     }, []);
 
-    const navigate = useNavigate(props);
+    const navigate = useNavigate();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -64,18 +64,18 @@ function Login(props) {
         <div className='login-container'>
             <div className='row container-fluid justify-content-center justify-content-evenly h-100'>
                 <div className='col-3 text-center css-effect h-100 w-50 d-flex flex-column justify-content-center'>
-                    <h1 data-aos="fade-left" data-aos-offset="200" data-aos-once="true">LOG IN</h1>
+                    <h1 data-aos="fade-left" data-aos-offset="200" data-aos-once="true">PRIJAVI SE</h1>
                     <form className='form-wrapper mx-auto w-50' onSubmit={Login}>
                         <input type='Email' placeholder='E-mail' className='login-input row input-animation' required
                         onChange={(e)=>setEmail(e.target.value)} value={email}></input>
                         <input type='password' placeholder='Lozinka' className='login-input row input-animation' required
                         onChange={(e)=>setPassword(e.target.value)} value={password}></input>
-                        <button type="submit" class="login-button login-animation row" >LOG IN</button>
+                        <button type="submit" class="login-button login-animation row" >PRIJAVI SE</button>
                         {errorLog && <div className='error-register'>{errorLog}</div>}
                     </form>
                 </div>
                 <div className='col-3 text-center css-effect h-100 w-50 d-flex flex-column justify-content-center'>
-                    <h1 data-aos="fade-right" data-aos-offset="200" data-aos-once="true">REGISTER</h1>
+                    <h1 data-aos="fade-right" data-aos-offset="200" data-aos-once="true">REGISTRIRAJ SE</h1>
                     <form className='form-wrapper mx-auto w-50' onSubmit={Reg}>
                         <input type='Email' placeholder='E-mail' className='reg-input row reg-animation' required
                         onChange={(e)=>setEmail(e.target.value)} value={email}></input>
@@ -83,7 +83,7 @@ function Login(props) {
                         onChange={(e)=>setName(e.target.value)} value={name}></input>
                         <input type='password' placeholder='Lozinka' className='reg-input row reg-animation' required
                         onChange={(e)=>setPassword(e.target.value)} value={password}></input>
-                        <button type="submit" class="reg-button reg-animation row" >REGISTER</button>
+                        <button type="submit" class="reg-button reg-animation row" >REGISTRIRAJ SE</button>
                         {errorReg && <div className='error-register'>{errorReg}</div>}
                     </form>
                 </div>

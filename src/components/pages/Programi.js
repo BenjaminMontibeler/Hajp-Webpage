@@ -25,7 +25,18 @@ const Programi = () => {
       querySnapshot.forEach((doc) => {
         dancesData.push({ id: doc.id, ...doc.data() });
       });
-      setDances(dancesData);
+
+      const sortedDances = dancesData.map((dance) => {
+        const sortedTermin = Object.entries(dance.Termin).sort((a, b) => {
+          const daysOrder = ['Pon', 'Uto', 'Sri', 'Čet', 'Pet', 'Sub', 'Ned'];
+          const dayA = a[0];
+          const dayB = b[0];
+          return daysOrder.indexOf(dayA) - daysOrder.indexOf(dayB);
+        });
+
+        return { ...dance, Termin: Object.fromEntries(sortedTermin) };
+      });
+      setDances(sortedDances);
     };
 
     fetchData();
